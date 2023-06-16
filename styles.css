@@ -1,0 +1,326 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'TT Commons', sans-serif;
+    color: #FFFFFF;
+}
+
+.main {
+    background: #000000;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 26px;
+    right: 80px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 40px;
+}
+
+.person-block {
+    position: relative;
+}
+
+.glasses {
+    position: absolute;
+    width: 94px;
+    top: 75px;
+    left: 95px;
+    transform: rotate(10deg)
+}
+
+.fragment {
+    position: absolute;
+    top: 317px;
+    left: 131px;
+}
+
+.person-contact {
+    background: #F51B1B;
+    height: 454px;
+    width: 322px;
+    border-radius: 24px 24px 0 0;
+    padding: 40px 24px 40px 24px;
+    position: absolute;
+    bottom: 0;
+}
+
+.person-contact__name {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-family: "Redcollar", sans-serif;
+}
+
+.person-contact__location {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+.contact {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.contact__icon {
+    margin-right: 17px;
+}
+
+.personal-information {
+    max-width: 1008px;
+}
+
+.person-presentation {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    margin-top: 12px;
+    max-width: 690px;
+    margin-bottom: 33px;
+}
+
+.experience-block {
+    border: 1px solid #FFFFFF;
+    max-width: 1006px;
+    position: relative;
+}
+
+.decoration-element {
+    margin-left: 56px;
+    position: absolute;
+    top: -2px;
+}
+
+.decoration-element::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: black;
+    width: 60px;
+}
+
+.education-block {
+    display: flex;
+    gap: 72px;
+    margin-top: 47px;
+    margin-bottom: 20px;
+}
+
+.career-block {
+    display: flex;
+    gap: 72px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-block {
+    display: flex;
+    gap: 72px;
+    margin-top: 20px;
+    margin-bottom: 93px;
+}
+
+.education,
+.career,
+.skills {
+    font-family: Redcollar;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 27px;
+    width: 124px;
+}
+
+.education-university, .career-teacher {
+    margin-bottom: 8px;
+}
+
+.education__title, .career__title, .skills-list__elem {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+}
+
+.education__description,
+.education__years,
+.career__description,
+.career__years {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+hr {
+    width: 930px;
+    color: white;
+    margin-left: 27px;
+    height: 1px;
+    opacity: .4;
+}
+
+.skills-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 360px) {
+    .logo {
+        top: 20px;
+        width: 220px;
+        height: 22px;
+        left: 20px;
+    }
+
+    .content-wrapper {
+        flex-wrap: wrap;
+        padding: 90px 20px 57px;
+    }
+
+    .person-photo {
+        height: 353px;
+        width: 320px;
+    }
+
+    .glasses {
+        width: 90px;
+        left: 95px;
+    }
+
+    .person-contact {
+        top: 90%;
+        height: 288px;
+        width: 320px;
+        border-radius: 20px 20px 0px 0px;
+        padding: 24px 16px 40px 16px;
+    }
+
+    .fragment {
+        top: 85%;
+    }
+
+    .person-contact__name {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 4px;
+    }
+
+    .person-contact__location {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 34px;
+    }
+
+    .contact {
+        margin-bottom: 18px;
+    }
+
+    a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .person-presentation {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 250px;
+        width: 320px;
+        margin-bottom: 24px;
+    }
+
+    .personal-information {
+        width: 340px;
+    }
+
+    .experience-block {
+        width: 318px;
+    }
+
+    .decoration-element {
+        margin-left: 129px;
+    }
+
+    .education-block, .career-block {
+        flex-direction: column;
+        gap: 16px;
+        margin-left: 15px;
+        margin-top: 24px;
+    }
+
+    .skills-block {
+        flex-direction: column;
+        gap: 16px;
+        margin-left: 15px;
+        margin-top: 24px;
+        margin-bottom: 30px;
+    }
+
+    .education,
+    .career,
+    .skills {
+        margin: 0;
+    }
+
+    .education-university, .career-teacher {
+        margin-bottom: 12px;
+    }
+
+    .education__title,
+    .career__title,
+    .skills-list__elem,
+    .education__description,
+    .education__years,
+    .career__description,
+    .career__years {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    hr {
+        width: 288px;
+        margin-left: 15px;
+    }
+
+    .skills-list {
+        gap: 16px;
+        width: 290px;
+    }
+}
